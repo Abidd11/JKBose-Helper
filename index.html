@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-300">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MyApp - Learn & Explore</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link href="https://unpkg.com/lucide@latest" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <style>
+    html.dark {
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+    .dark .bg-white {
+      background-color: #1e293b !important;
+    }
+    .dark .text-indigo-900 {
+      color: #e0e7ff !important;
+    }
+    .icon-button {
+      @apply text-white hover:text-yellow-300 transition-colors;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-700 via-purple-700 to-blue-800 text-white font-sans transition-colors duration-300">
+
+  <!-- Navigation Bar -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md shadow-md py-4 px-6 flex justify-between items-center">
+    <div class="text-xl font-bold text-yellow-300">JKBose Helper</div>
+    <button onclick="toggleDarkMode()" class="icon-button" title="Toggle Dark Mode">
+      <i data-lucide="moon" class="w-6 h-6"></i>
+    </button>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center pt-28 pb-12 px-4">
+    <h1 class="text-5xl md:text-6xl font-extrabold animate-fade-in-down tracking-tight leading-tight">
+      JKBose<span class="text-yellow-300"> Helper</span>
+    </h1>
+    <p class="text-xl mt-4 text-white/90 animate-fade-in-up">It's an app for study material and also provide all previous years papers and double solutions</p>
+  </header>
+
+  <!-- Lottie Animation Above Download -->
+  <div class="flex justify-center my-8 animate-fade-in">
+    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" style="width: 280px; height: 280px;" loop autoplay></lottie-player>
+  </div>
+
+  <!-- Download Button -->
+  <div class="flex justify-center mb-12">
+    <a href="https://shorturl.at/lW7Dc" class="flex items-center gap-3 bg-yellow-300 text-indigo-900 px-6 py-3 rounded-full font-semibold text-lg shadow-xl hover:scale-105 transition-all duration-300 hover:bg-yellow-400 ring-2 ring-white/30 transform hover:rotate-2 hover:scale-110">
+      <img src="https://img.icons8.com/color/48/000000/android-os.png" alt="APK" class="w-7 h-7" />
+      Download App
+    </a>
+  </div>
+
+  <!-- Empowering Education -->
+  <section class="bg-white bg-opacity-10 backdrop-blur-sm rounded-t-3xl py-16 px-4 shadow-inner" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-3">App Features</h2>
+    <p class="text-center text-white/80 mb-12 text-lg max-w-xl mx-auto">I will give you a way to make it easier for the students to study</p>
+
+    <div class="flex justify-center mb-12">
+      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_kkflmtur.json" background="transparent" speed="1" style="width: 260px; height: 260px;" loop autoplay></lottie-player>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="bg-white bg-opacity-20 p-6 rounded-xl shadow-lg hover:scale-105 transition transform text-center backdrop-blur-lg" data-aos="fade-up" data-aos-delay="100">
+        <div class="text-4xl mb-4 text-yellow-300">
+          <i data-lucide="book-open" class="w-10 h-10 mx-auto"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2">JKbose Books</h3>
+        <p class="text-white/90">You can download JK Bose books of all classes from our app.</p>
+      </div>
+      <div class="bg-white bg-opacity-20 p-6 rounded-xl shadow-lg hover:scale-105 transition transform text-center backdrop-blur-lg" data-aos="fade-up" data-aos-delay="200">
+        <div class="text-4xl mb-4 text-yellow-300">
+          <i data-lucide="bar-chart-3" class="w-10 h-10 mx-auto"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2">previous year Papers</h3>
+        <p class="text-white/90">You can also view and download previous year question paper in our page.</p>
+      </div>
+      <div class="bg-white bg-opacity-20 p-6 rounded-xl shadow-lg hover:scale-105 transition transform text-center backdrop-blur-lg" data-aos="fade-up" data-aos-delay="300">
+        <div class="text-4xl mb-4 text-yellow-300">
+          <i data-lucide="cloud-off" class="w-10 h-10 mx-auto"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Security</h3>
+        <p class="text-white/90">we cannot collect any type of your data this episode fully safe</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Version Info & Changelog -->
+  <section class="py-16 px-4" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-center mb-6">App Version & Changelog</h2>
+    <div class="max-w-3xl mx-auto bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm">
+      <p class="text-lg font-semibold mb-2">Current Version: <span class="text-yellow-300">v5.0</span></p>
+      <ul class="list-disc pl-6 text-white/80">
+        <li>Add Math Solution 10th</li>
+        <li>Previous year question paper 2025,2024</li>
+        <li>Fix Bugs And Make App More Smooth</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-white/60 mt-16 mb-6">
+    &copy; 2025 Jkbose helper. All rights reserved. <br>
+    Developed by <a href="https://www.instagram.com/ohh_itz__a._.bid__" target="_blank" class="text-yellow-300 hover:underline">RatherAabid</a>
+  </footer>
+
+  <!-- Animations -->
+  <style>
+    @keyframes fade-in-down {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fade-in-up {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-down { animation: fade-in-down 1s ease-out forwards; }
+    .animate-fade-in-up { animation: fade-in-up 1s ease-out forwards; }
+    .animate-fade-in { animation: fade-in-up 1.2s ease-out forwards; }
+  </style>
+
+  <!-- Scripts -->
+  <script>
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script> lucide.createIcons(); </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script> AOS.init({ duration: 1000, offset: 100, once: true }); </script>
+
+</body>
+</html>
